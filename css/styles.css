@@ -1,4 +1,106 @@
+video#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(../img/photos/photo1.jpg) no-repeat;
+    background-size: cover;
+}
 body{
-	background-image: url(../img/back.jpg);
+	/*background-image: url(../img/photos/photo1.jpg);*/
+	background-size: cover;
 	color: white;
+	background-repeat: no-repeat;
+	font-family: 'Aref Ruqaa', serif;
+	font-size: 2em;
+}
+body > div > h1{
+	font-size: 3.5em;
+}
+div > ul > li a:hover{
+	cursor: pointer;
+}
+
+.carousel-inner > .item > img{
+       width:740px;
+       height:460px;
+}
+#accomodation{
+	display: none;
+}
+#book{
+	color: black;
+	font-size: 2.5em;
+	text-align: center;
+}
+.room{
+	background-color: #e6e6e6;
+	padding-bottom: 30px;
+	color: black;
+}
+.order {
+    top: 50px;
+    left: 50px;
+    width: 100px;
+    line-height: 75px;
+    text-align: center;
+    opacity: 1;
+    background: grey;
+    color: #fff;
+    border-radius: 50%;
+    -webkit-animation: bounce .3s infinite alternate;
+    -moz-animation: bounce .3s infinite alternate;
+    animation: bounce .3s infinite alternate;
+}
+
+@-webkit-keyframes bounce {
+    to {
+        -webkit-transform: scale(1.2);
+    }
+}
+
+@-moz-keyframes bounce {
+    to {
+        -moz-transform: scale(1.2);
+    }
+}
+
+@keyframes bounce {
+    to {
+        transform: scale(1.2);
+    }
+}
+div > #button:hover {
+	cursor: pointer;
+	background-color: white;
+	color: black;
+}
+#contacts{
+	display: none;
+	color: orange;
+	font-size: 1.2em;
+	font-weight: bolder;
+}
+div > #contacts{
+	background-color: red;
+}
+.lnk {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  cursor: pointer;
+  margin: 5px;
 }
